@@ -1,40 +1,20 @@
 package com.chess.pieces;
 
-public abstract class Piece {
+import com.chess.board.*;
 
-	private int color;
-	private int positionX;
-	private int positionY;
-	protected char symbol;
+public interface Piece {
 
-	public Piece(int color, int positionX, int positionY) {
-		this.color = color;
-		this.positionX = positionX;
-		this.positionY = positionY;
-		this.symbol = symbol;
-	}
+	public boolean move(Board board, int playerColor, int x, int y);
 
-	public int getColor() {
-		return color;
-	}
+	public int getColor();
 
-	public int getX() {
-		return positionX;
-	}
+	public int getX();
 
-	public void setX(int positionX) {
-		this.positionX = positionX;
-	}
+	public void setX(int positionX);
 
-	public int getY() {
-		return positionY;
-	}
+	public int getY();
 
-	public void setY(int positionY) {
-		this.positionY = positionY;
-	}
+	public void setY(int positionY);
 
-	public char getSymbol() {
-		return symbol;
-	}
+	public char getSymbol();
 }

@@ -1,6 +1,8 @@
 package com.chess.pieces;
 
-public class Rook extends Piece {
+import com.chess.board.*;
+
+public class Rook extends AbstractPiece implements Piece {
 	public Rook(int color, int positionX, int positionY) {
 		super(color, positionX, positionY);
 
@@ -9,5 +11,9 @@ public class Rook extends Piece {
 		} else {
 			this.symbol = 'R';
 		}
+	}
+
+	public boolean move(Board board, int playerColor, int x, int y) {
+		return true;
 	}
 }

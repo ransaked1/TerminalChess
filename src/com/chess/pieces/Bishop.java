@@ -1,6 +1,8 @@
 package com.chess.pieces;
 
-public class Bishop extends Piece {
+import com.chess.board.*;
+
+public class Bishop extends AbstractPiece implements Piece {
 	public Bishop(int color, int positionX, int positionY) {
 		super(color, positionX, positionY);
 
@@ -9,5 +11,9 @@ public class Bishop extends Piece {
 		} else {
 			this.symbol = 'B';
 		}
+	}
+
+	public boolean move(Board board, int playerColor, int x, int y) {
+		return true;
 	}
 }

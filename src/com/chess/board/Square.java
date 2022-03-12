@@ -11,6 +11,10 @@ public class Square {
 		this.color = color;
 	}
 
+	public int getColor() {
+		return color;
+	}
+
 	public Piece getPiece() {
 		return piece;
 	}

@@ -1,2 +1,2 @@
 # TerminalChess
-A work in progress chess game in the terminal.
+A work in progress chess game for the terminal.
